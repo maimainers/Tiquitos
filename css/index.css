@@ -442,18 +442,33 @@ ul.sociales li:hover {
     div.video_cont {
         margin-right: 0;
         position: relative;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+    .text_outer_cont {
+        position: absolute;
+        width: 100%;
+        align-items: flex-end;
+        background-color: transparent;
     }
     .text_cont {
         width: 100%;
         margin-left: 0px;
+        position: relative;
+        right: 0px;
+        background-color: #f2ebe3e0;
     }
     div.intro_cont {
+        height: 85vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .video_cont:after {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 400px) {
@@ -464,5 +479,6 @@ ul.sociales li:hover {
         width: 100%;
     }
 }
+
 
 /*End - Media Querys*/
